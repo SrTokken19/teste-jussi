@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './solucao.css'
 import Busca from '../busca/busca'
+import lupa from '../header/img/search.svg'
 
 const api = 'https://kitsu.io/api/edge/';
 
@@ -28,7 +29,10 @@ function Solucao() {
           <div className="container">
             <div className='solucao__header'>
               <h2 className="solucao__title">Nossas soluções</h2>
-              <Busca value={text} onChange={(str) => setText(str)} />
+              <div className='busca'>
+                  <Busca value={text} onChange={(str) => setText(str)} />
+                  <button className='busca__btn' ><img src={lupa} /></button>
+              </div>
             </div>
             <div className='solucao__resultado'>
 
