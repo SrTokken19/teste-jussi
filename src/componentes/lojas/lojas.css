@@ -1,0 +1,41 @@
+.lojas {
+    background: #F2F2F2;
+}
+.lojas--flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+}
+
+.lojas__title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 769px){
+    .lojas--flex {
+        display: block;
+    }
+    .lojas__title {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .lojas__seta {
+        display: none;
+    }
+    .lojas__link {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        width: 25%;
+    }
+}
+@media (max-width: 426px) {
+    .lojas__link {
+        margin: 8px 0;
+        width: 50%;
+    }
+}

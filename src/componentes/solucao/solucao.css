@@ -1,0 +1,24 @@
+.solucao {
+    padding: 64px 0;
+}
+
+.solucao__title {
+    color: #000;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.solucao__title:before {
+    color: #03FFA5;
+    content: '//';
+    margin-right: 4px;
+}
+
+@media (max-width: 769px){
+    .solucao {
+        padding: 32px 0;
+    }
+    .solucao__title {
+        font-size: 22px;
+    }
+}

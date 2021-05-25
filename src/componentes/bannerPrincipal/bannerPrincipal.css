@@ -1,0 +1,74 @@
+.bannerPrincipal {
+    background: #03FFA5;
+    padding: 40px 0;
+}
+
+.bannerPrincipal--esquerda,
+.bannerPrincipal--direita {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.bannerPrincipal__title {
+    color: #000;
+    font-size: 64px;
+    font-weight: normal;
+    margin-bottom: 16px;
+    max-width: 450px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.bannerPrincipal__title:before {
+    color: #fff;
+    content: '//';
+    position: absolute;
+    top: 0;
+    left: -85px;
+}
+
+.bannerPrincipal__text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    max-width: 390px;
+}
+
+.bannerPrincipal__btn {
+    border: 1px solid #000;
+    border-radius: 6px;
+    color: #000;
+    display: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+@media (max-width: 769px) {
+    .bannerPrincipal--esquerda {
+        width: 100%;
+        text-align: center;
+    }
+    .bannerPrincipal--direita {
+        display: none;
+    }
+    .bannerPrincipal__title {
+        font-size: 38px;
+        margin: auto;
+        text-align: left;
+    }
+    .bannerPrincipal__text {
+        font-size: 14px;
+        margin: 12px auto 32px;
+        max-width: 450px;
+        text-align: left;
+    }
+    .bannerPrincipal__btn {
+        display: block;
+        max-width: 190px;
+        margin: auto;
+    }
+}

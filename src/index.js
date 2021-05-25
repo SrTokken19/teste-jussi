@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from './componentes/header/header'
+import BannerPrincipal from './componentes/bannerPrincipal/bannerPrincipal';
+import Lojas from './componentes/lojas/lojas'
+import Solucao from './componentes/solucao/solucao';
+import QuemSomos from './componentes/quem-somos/quemSomos';
+import Contato from './componentes/contato/contato';
+import Footer from './componentes/footer/footer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <BannerPrincipal />
+    <Lojas />
+    <Solucao />
+    <QuemSomos />
+    <Contato />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
