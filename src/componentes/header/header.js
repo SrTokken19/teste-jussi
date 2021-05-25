@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import logo from './img/logoJussi.svg'
 import carrinho from './img/shopping-cart.svg'
 import lupa from './img/search.svg'
 import './header.css'
-import Busca from './busca/busca'
-
-
+import Busca from '../busca/busca'
 
 function Header() {
+
+    const [text, setText] = useState('')
 
     return (
         <div className="header">
@@ -17,7 +17,7 @@ function Header() {
                 <a className="header__link" href="javascript:void(0)">Conheça a Jüssi</a>
             </div>
             <div className='header--direita'>
-                <Busca />
+                <Busca value={text} onChange={(str) => setText(str)} />
                 <a className="header__link" href="javascript:void(0)">Login</a>
                 <a className="header__cart" href="javascript:void(0)">
                     <img src={carrinho} />

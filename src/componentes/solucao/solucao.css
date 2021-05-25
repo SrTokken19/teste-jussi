@@ -14,11 +14,59 @@
     margin-right: 4px;
 }
 
+.solucao__resultado {
+    width: 100%;
+}
+.solucao__lista{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.solucao__item {
+    margin: 10px;
+    width: 25%;
+}
+
+.solucao__nome{
+    color: #000;
+    font-size: 16px;
+    height: 50px;
+}
+
+.solucao__descricao {
+    color: #EE0E7D;
+    font-size: 12px;
+    height: 200px;
+    overflow: scroll;
+}
+
+.solucao__dataEnd {
+    color: #5B5B5B;
+    font-size: 12px;
+    text-align: center;
+}
+
 @media (max-width: 769px){
     .solucao {
         padding: 32px 0;
     }
+    .solucao__descricao {
+        height: 100px;
+    }
     .solucao__title {
         font-size: 22px;
+    }
+    .solucao__lista {
+        display: block;
+    }
+    .solucao__item {
+        display: inline-block;
+        width: 48%;
+        margin: 1%;
+    }
+    .solucao__nome{
+        font-size: 14px;
     }
 }
