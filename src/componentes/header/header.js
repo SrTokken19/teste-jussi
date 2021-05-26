@@ -40,9 +40,6 @@ function Header() {
                 <img src={logo} />
                 <div>
                     <button className='header__menu--ico' ><img src={lupa} /></button>
-                    <div className='header__drop'>
-                        TESTE
-                    </div>
                 </div>
             </div>
         </div>
