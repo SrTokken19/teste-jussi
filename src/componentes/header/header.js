@@ -8,6 +8,11 @@ import Busca from '../busca/busca'
 function Header() {
 
     const [text, setText] = useState('')
+    const [isActive, setActive] = useState(false)
+
+    const toggleClass = () => {
+        setActive(!isActive);
+    };
 
     return (
         <div className="header">
@@ -24,8 +29,8 @@ function Header() {
                 </a>
             </div>
             <div className="header--mobile">
-                <div >
-                    <button className='header__menu--ico'><img src={carrinho} /></button>
+                <div className={isActive ? 'active': null}>
+                    <button className='header__menu--ico' onClick={toggleClass}><span>menu</span></button>
                     <div className="header__drop">
                         <a className="header__link" href="javascript:void(0)">Nossas soluções</a>
                         <a className="header__link" href="javascript:void(0)">Conheça a Jüssi</a>

@@ -40,7 +40,22 @@
     font-size: 12px;
     height: 200px;
     overflow: scroll;
+    overflow-x: hidden;
 }
+
+
+.solucao__descricao::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+  }
+
+  .solucao__descricao::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  .solucao__descricao::-webkit-scrollbar-thumb {
+    background-color: #ccc;    /* color of the scroll thumb */
+    border-radius: 20px;  /* creates padding around scroll thumb */
+  }
 
 .solucao__dataEnd {
     color: #5B5B5B;

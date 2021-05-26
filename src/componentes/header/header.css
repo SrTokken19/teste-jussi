@@ -57,6 +57,54 @@
     }
     .header__menu--ico {
         border: none;
-        background: transparent;
+    }
+
+    .header__menu--ico span{
+        display: block;
+        background: #000;
+        font-size: 0;
+        position: relative;
+        height: 4px;
+        width: 30px;
+        
+    }
+    
+    .header__menu--ico span:before {
+        top: -8px;
+    }
+    .header__menu--ico span:after {
+        top: 8px;
+    }
+    .header__menu--ico span:after,
+    .header__menu--ico span:before{
+        display: block;
+        content: '';
+        background: #000;
+        position: absolute;
+        font-size: 0;
+        height: 4px;
+        width: 30px;
+    }
+
+    .active {
+        position: relative;
+    }
+
+    .active .header__drop {
+        background: #fff;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        overflow: hidden;
+        width: 200px;   
+        z-index: 3; 
+    }
+    .active .header__drop a{
+        border-bottom: 1px solid #ccc;
+        display: block;
+        margin: 0;
+        padding: 6px 12px;
+        width: 100%;
     }
 }

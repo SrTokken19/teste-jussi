@@ -4,6 +4,7 @@
     max-width: 240px;
 }
 .busca__input {
+    color: #EE0E7D;
     border: none;
     border-radius: 20px;
     padding: 8px 24px;
@@ -11,6 +12,7 @@
 .busca__btn {
     background: transparent;
     border: none;
+    cursor: pointer;
     position: absolute;
     top: 2px;
     right: 25px;

@@ -29,10 +29,7 @@ function Solucao() {
           <div className="container">
             <div className='solucao__header'>
               <h2 className="solucao__title">Nossas soluções</h2>
-              <div className='busca'>
-                  <Busca value={text} onChange={(str) => setText(str)} />
-                  <button className='busca__btn' ><img src={lupa} /></button>
-              </div>
+                <Busca value={text} onChange={(str) => setText(str)} />
             </div>
             <div className='solucao__resultado'>
 
